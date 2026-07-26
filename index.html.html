@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home | JPIA SorSU</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a href="index.html" class="brand">
+    <div class="seal">JP</div>
+    <div class="brand-text">
+      <div class="name">JPIA Local Chapter</div>
+      <div class="sub">Sorsogon State University</div>
+    </div>
+  </a>
+  <div class="navlinks" id="navlinks">
+    <a href="index.html" class="active">Home</a><a href="about.html">About</a><a href="officers.html">Officers</a><a href="announcements.html">Announcements</a><a href="reports.html">Reports</a><a href="events.html">Events</a><a href="membership.html">Membership</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a>
+  </div>
+  <button class="navtoggle" id="navtoggle">&#9776;</button>
+</nav>
+
+<section class="hero" style="max-width:none; padding-top:100px;">
+  <div class="ledger-bg"></div>
+  <div class="hero-inner">
+    <div class="eyebrow">Batch A.Y. 2026&ndash;2027</div>
+    <h1>Every account tells<br><em>a story of service.</em></h1>
+    <p class="lead">The official chapter site of the Junior Philippine Institute of Accountants &mdash; Sorsogon State University. Explore each section below.</p>
+    <div class="hero-actions">
+      <a href="announcements.html" class="btn btn-primary">Latest Announcements</a>
+      <a href="reports.html" class="btn btn-ghost">View Reports</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <div class="eyebrow" style="color:var(--teal);"><span></span>Explore</div>
+    <h2>Browse the Chapter</h2>
+    <p>Click any section below to open its own page.</p>
+  </div>
+  <div class="tile-grid">
+    <a href="about.html" class="tile"><div class="tnum">01</div><h3>About</h3><p>Our mission, vision, and this year&rsquo;s theme.</p><span class="go">Open page</span></a>
+    <a href="officers.html" class="tile"><div class="tnum">02</div><h3>Officers</h3><p>Meet the chapter&rsquo;s organizational chart.</p><span class="go">Open page</span></a>
+    <a href="announcements.html" class="tile"><div class="tnum">03</div><h3>Announcements</h3><p>The latest news and updates.</p><span class="go">Open page</span></a>
+    <a href="reports.html" class="tile"><div class="tnum">04</div><h3>Reports</h3><p>Monthly accomplishment reports archive.</p><span class="go">Open page</span></a>
+    <a href="events.html" class="tile"><div class="tnum">05</div><h3>Events</h3><p>Upcoming activities and programs.</p><span class="go">Open page</span></a>
+    <a href="membership.html" class="tile"><div class="tnum">06</div><h3>Membership</h3><p>How to join and member benefits.</p><span class="go">Open page</span></a>
+    <a href="resources.html" class="tile"><div class="tnum">07</div><h3>Resources</h3><p>Forms, constitution, and downloads.</p><span class="go">Open page</span></a>
+    <a href="contact.html" class="tile"><div class="tnum">08</div><h3>Contact</h3><p>Reach the chapter directly.</p><span class="go">Open page</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>JPIA &mdash; SorSU Chapter</h4>
+      <p style="font-size:13.5px; max-width:280px;">Junior Philippine Institute of Accountants, Local Chapter, Sorsogon State University, Sorsogon City, Philippines.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="about.html">About</a>
+      <a href="officers.html">Officers</a>
+      <a href="reports.html">Reports</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="#">Facebook Page &#8599;</a>
+      <a href="mailto:jpia.sorsu@example.com">jpia.sorsu@example.com</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 JPIA Local Chapter, Sorsogon State University.</span>
+    <span class="mono">Updated monthly.</span>
+  </div>
+</footer>
+<script>
+  const toggle = document.getElementById('navtoggle');
+  const links = document.getElementById('navlinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+</script>
+</body>
+</html>

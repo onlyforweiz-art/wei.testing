@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Membership | JPIA SorSU</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a href="index.html" class="brand">
+    <div class="seal">JP</div>
+    <div class="brand-text">
+      <div class="name">JPIA Local Chapter</div>
+      <div class="sub">Sorsogon State University</div>
+    </div>
+  </a>
+  <div class="navlinks" id="navlinks">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="officers.html">Officers</a><a href="announcements.html">Announcements</a><a href="reports.html">Reports</a><a href="events.html">Events</a><a href="membership.html" class="active">Membership</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a>
+  </div>
+  <button class="navtoggle" id="navtoggle">&#9776;</button>
+</nav>
+
+<div class="page-header">
+  <div class="ledger-bg"></div>
+  <div class="inner">
+    <div class="crumb"><a href="index.html">Home</a> / Membership</div>
+    <h1>Membership</h1>
+    <p class="lead">How to join the chapter and what you get as a member.</p>
+  </div>
+</div>
+<section>
+  <div class="member-grid">
+    <div>
+      <ul class="req-list">
+        <li><span class="num">01</span> Currently enrolled BS Accountancy student</li>
+        <li><span class="num">02</span> Payment of membership fee</li>
+        <li><span class="num">03</span> Attendance at orientation</li>
+        <li><span class="num">04</span> Completed registration form</li>
+      </ul>
+    </div>
+    <div class="benefit-card">
+      <h3>Member Benefits</h3>
+      <p style="font-size:14px; color:var(--muted);">Access to seminars, review materials, networking with professionals, leadership opportunities, and official JPIA National recognition.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>JPIA &mdash; SorSU Chapter</h4>
+      <p style="font-size:13.5px; max-width:280px;">Junior Philippine Institute of Accountants, Local Chapter, Sorsogon State University, Sorsogon City, Philippines.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="about.html">About</a>
+      <a href="officers.html">Officers</a>
+      <a href="reports.html">Reports</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="#">Facebook Page &#8599;</a>
+      <a href="mailto:jpia.sorsu@example.com">jpia.sorsu@example.com</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 JPIA Local Chapter, Sorsogon State University.</span>
+    <span class="mono">Updated monthly.</span>
+  </div>
+</footer>
+<script>
+  const toggle = document.getElementById('navtoggle');
+  const links = document.getElementById('navlinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | JPIA SorSU</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a href="index.html" class="brand">
+    <div class="seal">JP</div>
+    <div class="brand-text">
+      <div class="name">JPIA Local Chapter</div>
+      <div class="sub">Sorsogon State University</div>
+    </div>
+  </a>
+  <div class="navlinks" id="navlinks">
+    <a href="index.html">Home</a><a href="about.html" class="active">About</a><a href="officers.html">Officers</a><a href="announcements.html">Announcements</a><a href="reports.html">Reports</a><a href="events.html">Events</a><a href="membership.html">Membership</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a>
+  </div>
+  <button class="navtoggle" id="navtoggle">&#9776;</button>
+</nav>
+
+<div class="page-header">
+  <div class="ledger-bg"></div>
+  <div class="inner">
+    <div class="crumb"><a href="index.html">Home</a> / About</div>
+    <h1>About the Chapter</h1>
+    <p class="lead">Who we are and what we stand for.</p>
+  </div>
+</div>
+<section>
+  <div class="about-grid">
+    <div>
+      <p>The Junior Philippine Institute of Accountants (JPIA) &mdash; Sorsogon State University Local Chapter is the official student organization for BS Accountancy students, dedicated to academic excellence, professional development, and community service.</p>
+      <p>We serve as the bridge between the classroom and the profession &mdash; organizing seminars, review sessions, outreach programs, and fellowship activities that shape well-rounded future CPAs.</p>
+      <p><em>Replace this paragraph with your chapter's actual mission, vision, and this year's theme.</em></p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-row"><span>Academic Year</span><span class="val">2026&ndash;2027</span></div>
+      <div class="stat-row"><span>Active Members</span><span class="val">[ ADD NUMBER ]</span></div>
+      <div class="stat-row"><span>Committees</span><span class="val">[ ADD NUMBER ]</span></div>
+      <div class="stat-row"><span>Chapter Adviser</span><span class="val">[ NAME ]</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>JPIA &mdash; SorSU Chapter</h4>
+      <p style="font-size:13.5px; max-width:280px;">Junior Philippine Institute of Accountants, Local Chapter, Sorsogon State University, Sorsogon City, Philippines.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="about.html">About</a>
+      <a href="officers.html">Officers</a>
+      <a href="reports.html">Reports</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="#">Facebook Page &#8599;</a>
+      <a href="mailto:jpia.sorsu@example.com">jpia.sorsu@example.com</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 JPIA Local Chapter, Sorsogon State University.</span>
+    <span class="mono">Updated monthly.</span>
+  </div>
+</footer>
+<script>
+  const toggle = document.getElementById('navtoggle');
+  const links = document.getElementById('navlinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+</script>
+</body>
+</html>

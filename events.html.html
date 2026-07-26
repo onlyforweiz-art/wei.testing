@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events | JPIA SorSU</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <a href="index.html" class="brand">
+    <div class="seal">JP</div>
+    <div class="brand-text">
+      <div class="name">JPIA Local Chapter</div>
+      <div class="sub">Sorsogon State University</div>
+    </div>
+  </a>
+  <div class="navlinks" id="navlinks">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="officers.html">Officers</a><a href="announcements.html">Announcements</a><a href="reports.html">Reports</a><a href="events.html" class="active">Events</a><a href="membership.html">Membership</a><a href="resources.html">Resources</a><a href="contact.html">Contact</a>
+  </div>
+  <button class="navtoggle" id="navtoggle">&#9776;</button>
+</nav>
+
+<div class="page-header">
+  <div class="ledger-bg"></div>
+  <div class="inner">
+    <div class="crumb"><a href="index.html">Home</a> / Events</div>
+    <h1>Events &amp; Activities</h1>
+    <p class="lead">Upcoming programs and activities from the chapter.</p>
+  </div>
+</div>
+<section>
+  <div class="events-grid">
+    <div class="event-card"><div class="when">AUG 14, 2026</div><h3>Freshers&rsquo; Orientation</h3><p>Add short event description here.</p></div>
+    <div class="event-card"><div class="when">AUG 28, 2026</div><h3>CPA Review Talk</h3><p>Add short event description here.</p></div>
+    <div class="event-card"><div class="when">SEP 05, 2026</div><h3>Community Outreach</h3><p>Add short event description here.</p></div>
+    <div class="event-card"><div class="when">SEP 20, 2026</div><h3>Foundation Week</h3><p>Add short event description here.</p></div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>JPIA &mdash; SorSU Chapter</h4>
+      <p style="font-size:13.5px; max-width:280px;">Junior Philippine Institute of Accountants, Local Chapter, Sorsogon State University, Sorsogon City, Philippines.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="about.html">About</a>
+      <a href="officers.html">Officers</a>
+      <a href="reports.html">Reports</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="#">Facebook Page &#8599;</a>
+      <a href="mailto:jpia.sorsu@example.com">jpia.sorsu@example.com</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 JPIA Local Chapter, Sorsogon State University.</span>
+    <span class="mono">Updated monthly.</span>
+  </div>
+</footer>
+<script>
+  const toggle = document.getElementById('navtoggle');
+  const links = document.getElementById('navlinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+</script>
+</body>
+</html>
